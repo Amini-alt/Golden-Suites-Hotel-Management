@@ -450,8 +450,7 @@ a {
   20%, 96% { opacity: 0; }
 }
 
-.hero-copy,
-.hero-panel {
+.hero-copy {
   position: relative;
   z-index: 1;
 }
@@ -505,46 +504,6 @@ a {
   border: 1px solid #b37f10;
   color: #b37f10;
   background: #ffffff;
-}
-
-.hero-panel {
-  display: grid;
-  gap: 1rem;
-}
-
-.hero-card {
-  background: #ffffff;
-  border-radius: 24px;
-  padding: 1.75rem;
-  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
-}
-
-.hero-card h3 {
-  margin-bottom: 1rem;
-  color: #0f172a;
-}
-
-.hero-card ul {
-  list-style: none;
-  display: grid;
-  gap: 0.9rem;
-}
-
-.hero-card li {
-  padding-left: 1.1rem;
-  position: relative;
-  color: #475569;
-}
-
-.hero-card li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.7rem;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #b37f10;
 }
 
 .section-heading span {
@@ -785,20 +744,17 @@ a {
 }
 
 .dark-mode body,
-.dark-mode .hero-card,
 .dark-mode .room-card,
 .dark-mode .testimonial-card,
 .dark-mode .footer-column,
 .dark-mode .main-nav a,
-.dark-mode .hero-panel,
 .dark-mode .footer-about {
   background: #111827;
 }
 
 .dark-mode .room-card,
 .dark-mode .testimonial-card,
-.dark-mode .footer-column,
-.dark-mode .hero-card {
+.dark-mode .footer-column {
   border-color: rgba(255, 255, 255, 0.08);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
 }
@@ -844,15 +800,6 @@ a {
   background: #1e293b;
 }
 
-.dark-mode .hero-card {
-  background: #111827;
-}
-
-.dark-mode .hero-card h3,
-.dark-mode .hero-card li {
-  color: #f1f2f3;
-}
-
 .dark-mode .about-panel p,
 .dark-mode .room-info p,
 .dark-mode .testimonial-card p,
@@ -884,7 +831,6 @@ a {
     padding: 2rem 1rem;
   }
 
-  .hero-card,
   .room-info,
   .testimonial-card,
   .footer-column {
