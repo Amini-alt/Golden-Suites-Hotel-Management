@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/index.css">
+  <link rel="stylesheet" href="fontawesome/fontawesome-free-7.1.0-web/css/all.min.css">
+  <title>Golden Suites | Room Management</title>
+</head>
+
+<body>
+
+  <!-- Header -->
+
+  <header class="site-header">
+    <div class="brand">
+      <div class="brand-mark">GS</div>
+      <div class="brand-title">
+        <h1>Golden Suites</h1>
+        <p>Hotel & Room Management</p>
+      </div>
+    </div>  
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+    <label for="nav-toggle" class="nav-toggle-btn" aria-label="Open navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <button class="theme-toggle-btn" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a class="active" href="#home"><i class="fa-solid fa-house fa-fw"></i>Home</a></li>
+        <li><a href="#services"><i class="fa-solid fa-concierge-bell fa-fw"></i>Services</a></li>
+        <li><a href="#booking"><i class="fa-solid fa-calendar-check fa-fw"></i>Booking</a></li>
+        <li><a href="#customer"><i class="fa-solid fa-users fa-fw"></i>Customers</a></li>
+        <li><a href="#about_us"><i class="fa-solid fa-envelope fa-fw"></i>Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+     <!-- Section 1 -->
+
+    <section class="hero" id="home">
+      <div class="slideshow">
+        <div class="slide" style="background-image: url('pictures/slideshow/lobby.jpg');"></div>
+        <div class="slide" style="background-image: url('pictures/slideshow/garden.jpg');"></div>
+                <div class="slide" style="background-image: url('pictures/slideshow/spa_room.jpg');"></div>
+
+      </div>
+
+      <div class="hero-copy">
+        <p class="eyebrow">Welcome to Golden Suites</p>
+        <h2>Smart room booking for a comfortable stay</h2>
+        <p style="color: rgb(222, 220, 220);">Explore modern rooms designed for business travelers, families, and guests who want convenience, value, and quality service.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#section1"><i class="fa-solid fa-magnifying-glass"></i>Explore Rooms</a>
+          <a class="btn secondary" href="#booking"><i class="fa-solid fa-bed"></i>Book Now</a>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <div class="hero-card">
+          <h3>What we offer</h3>
+          <ul>
+            <li>Easy room selection and booking</li>
+            <li>Flexible guest support</li>
+            <li>Comfortable rooms with modern amenities</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 with form -->
+
+<section class="he-form" aria-labelledby="he_form_title" id="booking">
+  <h2 id="he_form_title">Golden Suite Reservation Form</h2>
+  <form action="#" method="post" novalidate>
+    <div class="he-field">
+      <label for="firstName" class="required">First Name</label>
+      <input autocomplete="given-name" type="text" id="firstName" name="firstName" placeholder="Enter first name" required>
+    </div>
+
+    <div class="he-field">
+      <label for="lastName" class="required">Last Name</label>
+      <input autocomplete="family-name" type="text" id="lastName" name="lastName" placeholder="Enter last name" required>
+    </div>
+
+    <div class="he-field">
+      <label for="email" class="required">Email</label>
+      <input autocomplete="email" type="email" id="email" name="email" placeholder="Enter valid email" required>
+    </div>
+
+    <div class="he-field">
+      <label for="phone" class="required">Phone</label>
+      <input autocomplete="tel" type="tel" id="phone" name="phone" required>
+    </div>
+
+    <div class="he-grid">
+      <div class="he-field">
+        <label for="checkIn" class="required">Check-in Date</label>
+        <input type="date" id="checkIn" name="checkIn" required>
+      </div>
+      <div class="he-field">
+        <label for="checkOut" class="required">Check-out Date</label>
+        <input type="date" id="checkOut" name="checkOut" required>
+      </div>
+    </div>
+
+
+    <div class="he-field">
+      <label for="roomType" class="required">Room Type</label>
+      <select id="roomType" name="roomType" required>
+        <option value="">Select Room Type</option>
+        <option value="single">King</option>
+        <option value="double">Twin</option>
+        <option value="suite">Triple</option>
+      </select>
+    </div>
+
+    <div class="he-field">
+      <label for="requests">Special Requests</label>
+      <textarea id="requests" name="requests" rows="4"></textarea>
+    </div>
+
+    <button class="he-btn" type="submit">Submit Reservation</button>
+  </form>
+</section>
+
+<!-- Section 3 With services -->
+
+    <section id="section1" class="room-overview">
+      <div class="section-heading">
+        <center><span>Our Services</span></center>
+
+        <div class="services" id="services">
+        <div class="room-card">
+          <img src="pictures/services/Sauna and spa.jpg" alt="Sauna & spa">
+          <div class="room-info">
+            <h3>Sauna & Spa</h3>
+            <p>Designed for the maintainance of the wellbeing of customers providing a calm environment good for physical, emotional and psychological health.</p>
+            <a class="btn small primary" href="#booking">Book now</a>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <img src="pictures/services/Cinema.jpg" alt="Cinema hall">
+          <div class="room-info">
+            <h3>Cinema hall</h3>
+            <p>Large and comfy place that our guests can go to relax while watching a movie, 
+              it is equipped with everything needed to have a premium stay.</p>
+            <a class="btn small secondary" href="#booking">Book now</a>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <img src="pictures/services/bed.jpg" alt="King room">
+          <div class="room-info">
+            <h3>High quality bedding</h3>
+            <p>A restful night’s sleep is crucial, and the quality of the bed plays a pivotal role in this. Hotel suites should offer high-quality bedding, including plush mattresses, premium linens, and various pillows to cater to your comfort preferences.</p>
+            <a class="btn small primary" href="#booking">Book now</a>
+          </div>
+        </div>
+
+         <div class="room-card">
+          <img src="pictures/services/shower.jpg" alt="Spa room">
+          <div class="room-info">
+            <h3>Modern Bathroom Facilities</h3>
+            <p>Suites also stand out in the bathroom. Look for spacious bathrooms with separate shower and bathtub options, double vanities ,amenities like heated flooring, rainfall showerheads, elevate your vacation to a new level.</p>
+            <a class="btn small primary" href="#booking">Book now</a>
+          </div>
+        </div>
+      
+
+     
+        <div class="room-card">
+          <img src="pictures/services/room_service.jpg" alt="Twin room">
+          <div class="room-info">
+            <h3>In-Room Dining</h3>
+            <p>Dining in your suite can be a significant advantage, especially after a long day of travel or meetings. Local delicacies can also add convenience and a touch of indulgence to your stay.</p>
+            <a class="btn small primary" href="#booking">Book now</a>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <img src="pictures/services/butler.jpg" alt="Triple room">
+          <div class="room-info">
+            <h3>Butler Services</h3>
+            <p>Personalized service can significantly improve your hotel experience. Suites often come with access to dedicated concierge or butler services, ensuring all your needs are met promptly and efficiently..</p>
+            <a class="btn small secondary" href="#booking">Book now</a>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <img src="pictures/services/Dinning.jpg" alt="King room">
+          <div class="room-info">
+            <h3>Premium dinning experience.</h3>
+            <p>Enjoy a large king-size bed with extra comfort and premium room amenities.</p>
+            <a class="btn small primary" href="#booking">Book now</a>
+          </div>
+        </div>
+
+         <div class="room-card">
+          <img src="pictures/services/gym.jpg" alt="Spa room">
+          <div class="room-info">
+            <h3>Fitness Facilities</h3>
+            <p>For those who like to stay active while traveling, having access to fitness facilities like treadmills, stationary bikes, or yoga mats are a must.</p>
+            <a class="btn small primary" href="#booking">Book now</a>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <img src="pictures/services/internet.jpg" alt="Spa room">
+          <div class="room-info">
+            <h3>High-Speed Internet and Connectivity</h3>
+            <p>In today’s digital age, staying connected is more important than ever. Our suites have fast internet so you can watch videos online, get some work done, or keep in touch with friends and family.</p>
+            <a class="btn small primary" href="#booking">Book now</a>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <img src="pictures/services/turndown_service.jpg" alt="Turndown services">
+          <div class="room-info">
+            <h3>Turndown Service</h3>
+            <p>A nightly turndown service is a small but delightful touch that can enhance your comfort including preparing your bed for sleep, replenishing toiletries, and leaving a small treat, such as chocolates or bedtime stories ensuring that you end your day on a high note.</p>
+            <a class="btn small primary" href="#booking">Book now</a>
+          </div>
+        </div>
+
+      </div>
+ 
+<center><span>Rooms available</span></center>
+
+        <center><h2>Rooms made for every stay</h2></center>
+        <p>Discover the ideal room type with clear details, friendly booking links, and a layout that makes selecting your room easy.</p>
+      </div>
+
+      
+
+      <!-- Our rooms  -->
+       
+      <div class="room-grid">
+        <div class="room-card">
+          <img src="pictures/rooms/Twin room.jpg" alt="Twin room">
+          <div class="room-info">
+            <h3>Twin Room</h3>
+            <p>Designed for two guests with flexible bedding and a cozy atmosphere for a relaxed stay.</p>
+            <a class="btn small primary" href="#booking">Book now</a>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <img src="pictures/rooms/Triple room 1.jpg" alt="Triple room">
+          <div class="room-info">
+            <h3>Triple Room</h3>
+            <p>Spacious accommodation for three guests, perfect for groups or family travel.</p>
+            <a class="btn small secondary" href="#booking">Book now</a>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <img src="pictures/rooms/King room.jpg" alt="King room">
+          <div class="room-info">
+            <h3>King Room</h3>
+            <p>Enjoy a large king-size bed with extra comfort and premium room amenities.</p>
+            <a class="btn small primary" href="#booking">Book now</a>
+          </div>
+        </div>
+
+         <div class="room-card">
+          <img src="pictures/rooms/spa_room.jpg" alt="Spa room">
+          <div class="room-info">
+            <h3>Relaxation Rooms</h3>
+            <p>Relax and rejuvenate in our luxurious spa room, complete with premium amenities and a tranquil atmosphere.</p>
+            <a class="btn small primary" href="#booking">Book now</a>
+          </div>
+        </div>
+         <div class="room-card">
+          <img src="pictures/services/balcony_sunset.jpg" alt="Spa room">
+          <div class="room-info">
+            <h3>Balcony</h3>
+            <p>A private balcony or terrace can be a fantastic addition to a hotel suite. It offers a peaceful outdoor space to enjoy morning coffee or unwind in the evening.</p>
+            <a class="btn small primary" href="#booking">Book now</a>
+          </div>
+        </div>
+        <div class="room-card">
+          <img src="pictures/rooms/dinning_room.jpg" alt="Spa room">
+          <div class="room-info">
+            <h3>Dinning Room</h3>
+            <p>Our dinning rooms offer an intimate, multisensory experience blending bespoke interior design with exceptional service including high-end materials like marble, soft ambient lighting, and stunning focal points such as chandeliers.</p>
+            <a class="btn small primary" href="#booking">Book now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+   <!-- Customers part -->
+
+    <section id="customer" class="customer-grid">
+      <h2>Our Satisfied Customers' Comments</h2>
+      <div class="cards">
+        <div class="testimonial-card">
+          <h3>Emmey</h3>
+          <p>"The customer experience was seamless and professional. The room was comfortable and the booking process was quick."</p>
+          <img src="pictures/customers/customer 1.jpg" alt="Customer Emmey">
+        </div>
+
+        <div class="testimonial-card">
+          <h3>Alice</h3>
+          <p>"I loved the friendly support and the flexible room choices. This hotel makes travel planning easy."</p>
+          <img src="pictures/customers/customer 2.jpg" alt="Customer Alice">
+        </div>
+
+        <div class="testimonial-card">
+          <h3>Amanda</h3>
+          <p>"The room felt spacious and modern. Booking online was simple and my stay was relaxing."</p>
+          <img src="pictures/customers/customer 3.jpg" alt="Customer Amanda">
+        </div>
+
+        <div class="testimonial-card">
+          <h3>Sofia</h3>
+          <p>"Perfect for sharing stay plans with colleagues. The room service and layout were excellent."</p>
+          <img src="pictures/customers/customer 4.jpg" alt="Customer Sofia">
+        </div>
+      </div>
+    </section>
+
+    <section id="about_us" class="footer-about">
+      <div class="about-panel">
+        <h2>About us</h2>
+        <p>Havana Suites delivers trusted hospitality, modern room management, and thoughtful guest service for every stay.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/login.php/"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/login.php/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.twitter.com/login.php/"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-column">
+          <h3>Quick links</h3>
+          <ul>
+                   <li><a class="active" href="#home"><i class="fa-solid fa-house fa-fw"></i>Home</a></li>
+        <li><a href="#services"><i class="fa-solid fa-concierge-bell fa-fw"></i>Services</a></li>
+        <li><a href="#booking"><i class="fa-solid fa-calendar-check fa-fw"></i>Booking</a></li>
+        <li><a href="#customer"><i class="fa-solid fa-users fa-fw"></i>Customers</a></li>
+        <li><a href="#about_us"><i class="fa-solid fa-envelope fa-fw"></i>Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul>
+            <li><i class="fa-solid fa-envelope fa-fw"></i>Email: goldensuites@gmail.com</li>
+            <li><i class="fa-solid fa-phone fa-fw"></i>Phone: 079 123 4567</li>
+            <li><i class="fa-solid fa-location-dot fa-fw"></i>Location: Kigali, Rwanda</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Golden Suites. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (savedTheme === 'dark' || (!savedTheme && prefersDarkMode)) {
+      document.body.classList.add('dark-mode');
+    }
+
+    function updateThemeIcon() {
+      if (!themeToggle) return;
+      const icon = themeToggle.querySelector('i');
+      if (!icon) return;
+      icon.className = document.body.classList.contains('dark-mode')
+        ? 'fa-solid fa-sun'
+        : 'fa-solid fa-moon';
+    }
+
+    updateThemeIcon();
+
+    if (themeToggle) {
+      themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        localStorage.setItem(
+          'theme',
+          document.body.classList.contains('dark-mode') ? 'dark' : 'light'
+        );
+        updateThemeIcon();
+      });
+    }
+
+    const reservationForm = document.querySelector('.he-form form');
+    const emailInput = document.getElementById('email');
+    const phoneInput = document.getElementById('phone');
+    const checkInInput = document.getElementById('checkIn');
+    const checkOutInput = document.getElementById('checkOut');
+
+    function parseLocalDate(value) {
+      const [year, month, day] = value.split('-').map(Number);
+      return new Date(year, month - 1, day);
+    }
+
+    if (reservationForm) {
+      reservationForm.addEventListener('submit', (event) => {
+        const errors = [];
+        const emailValue = emailInput?.value.trim() ?? '';
+        const phoneValue = phoneInput?.value.replace(/\D/g, '') ?? '';
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        const checkInDate = checkInInput.value ? parseLocalDate(checkInInput.value) : null;
+        const checkOutDate = checkOutInput.value ? parseLocalDate(checkOutInput.value) : null;
+
+        if (!emailValue.includes('@')) {
+          errors.push('Please enter a valid email address containing "@".');
+        }
+
+        if (phoneValue.length !== 10) {
+          errors.push('Phone number must contain exactly 10 digits.');
+        }
+
+        if (checkInDate && checkInDate < today) {
+          errors.push('Check-in date cannot be in the past.');
+        }
+
+        if (checkOutDate && checkOutDate < today) {
+          errors.push('Check-out date cannot be in the past.');
+        }
+
+        if (checkInDate && checkOutDate && checkOutDate <= checkInDate) {
+          errors.push('Check-out date must be after check-in date.');
+        }
+
+        if (errors.length) {
+          event.preventDefault();
+          alert(errors.join('\n'));
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
